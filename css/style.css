@@ -1,0 +1,415 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+  }
+  
+  /*****************  MENU  ***********/
+  
+  .navbar {
+    background: linear-gradient(135deg, #161616, #111111);
+    padding: 10px 10px;
+    box-shadow: 0 4px 6px #161616;
+  }
+  .navbar-brand {
+    display: flex;
+    align-items: center;
+    padding: 0;
+  }
+  .navbar-brand img {
+    width: 40px;
+    height: auto;
+  }
+  .navbar-brand .portfolio-text {
+    margin-left: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  .navbar-brand .portfolio-text .mi {
+    color: #00aaff;
+    font-size: 25px;
+    font-style: italic;
+  }
+  .navbar-brand .portfolio-text {
+    color: #fff;
+  }
+  .navbar-nav .nav-item .nav-link {
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    margin-left: 55px;
+    padding: 10px 30px;
+    transition: all 0.3s ease-in-out;
+    border-radius: 30px;
+  }
+  .navbar-nav .nav-item .nav-link:hover {
+    color: #00aaff;
+    background-color: #161616;
+  }
+  .navbar-nav .nav-item .active .nav-link {
+    color: #00aaff;
+  }
+  .navbar-nav .dropdown-menu {
+    font-weight: bold;
+    color: #00aaff;
+    background-color: #eeeeee;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0 4px 6px rgb(255, 255, 255);
+  }
+  .navbar-nav .dropdown-item {
+    font-weight: bold;
+    color: #00aaff;
+    padding: 10px 20px;
+    font-size: 14px;
+    transition: background-color 0.3s ease-in-out;
+  }
+  .navbar-nav .dropdown-item:hover {
+    background-color: #00aaff;
+    color: #161616;
+  }
+  .navbar-nav .nav-item.dropdown .nav-link {
+    color: #fff;
+  }
+  .navbar-nav .nav-item.dropdown .nav-link:hover {
+    color: #fff;
+  }
+  .navbar-nav .nav-item.dropdown.show .nav-link {
+    color: #00aaff;
+  }
+  .navbar-toggler {
+    color: #00aaff;
+    outline: none;
+  }
+  .navbar-toggler-icon {
+    background-image: url("https://cdn.iconscout.com/icon/free/png-256/menu-238-675537.png");
+    width: 30px;
+    height: 30px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    border: 3px solid #00aaff;
+  }
+  .navbar-collapse {
+    justify-content: flex-end;
+  }
+  body {
+    padding-top: 80px;
+  }
+  @media (max-width: 768px) {
+    .navbar-nav .dropdown-item {
+      font-weight: bold;
+      color: #00aaff;
+      padding: 10px 20px;
+      font-size: 10px;
+      transition: background-color 0.3s ease-in-out;
+    }
+    .navbar {
+      background: linear-gradient(135deg, #050707, #111111);
+      padding: 10px 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.854);
+    }
+    .navbar-brand img {
+      width: 20px;
+      height: auto;
+    }
+    .navbar-nav .nav-item .nav-link {
+      color: #fff;
+      font-size: 16px;
+      font-weight: bold;
+      margin-left: 10px;
+      padding: 10px 30px;
+      transition: all 0.3s ease-in-out;
+      border-radius: 30px;
+    }
+    .navbar-brand .portfolio-text {
+      margin-left: 10px;
+      font-size: 15px;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+    .navbar-brand .portfolio-text .mi {
+      color: #00aaff;
+      font-size: 18px;
+      font-style: italic;
+    }
+    .navbar-nav .nav-item {
+      text-align: center;
+      margin-bottom: 5px;
+    }
+  
+    .navbar-nav .nav-item .nav-link {
+      font-size: 10px;
+    }
+}
+
+/*   SKILLS   */
+
+.skills1 {
+  background: url('https://i.ibb.co/PTND4hw/fondo-09-09.png') no-repeat center center fixed;
+  background-size: cover;
+  margin: 0;
+  padding: 5px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, sans-serif;
+}
+
+.imgskillsrecursos {
+  width: 10px;
+  position: absolute;
+  top: 20px; /* Ajusta la posición vertical */
+}
+
+.imgskillsrecursos.left {
+  left: 10px;
+}
+
+.imgskillsrecursos.right {
+  right: 10px;
+}
+
+.imgskills {
+  width: 40px;
+}
+
+.skills1 .container {
+  border-radius: 8px;
+  padding: 1px;
+  width: 90%;
+  max-width: 1200px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 5px;
+  position: relative; /* Para posicionamiento absoluto de imgskillsrecursos */
+}
+
+.skills1 .section {
+  background-color: #ffffff;
+  padding: 60px 20px;
+  flex: 1;
+  min-width: 300px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  margin: 5px;
+  transition: transform 0.2s ease;
+  position: relative;
+}
+
+.skills1 .section:hover {
+  transform: translateY(-5px);
+}
+
+.skills1 .section.right {
+  background-color: #f0f0f0;
+}
+
+.skills1 .title {
+  font-size: 20px;
+  font-weight: bold;
+  color: #333333;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.skills1 .row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+.skills1 .item {
+  border: 1px solid #4b0082;
+  border-radius: 20px;
+  padding: 10px;
+  text-align: center;
+  color: #4b0082;
+  background-color: #ffffff;
+  font-weight: bold;
+  width: calc(25% - 15px);
+  box-sizing: border-box;
+  font-size: 14px;
+  transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.2s ease;
+  opacity: 0;
+  animation: fadeIn 0.3s ease-in-out forwards;
+}
+
+.skills1 .section.right .item {
+  border-color: #ff4500;
+  color: #ff4500;
+}
+
+.skills1 .item:hover {
+  background-color: #4b0082;
+  color: #ffffff;
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 480px) {
+  .skills1 {
+    background: url('https://i.ibb.co/PmGbbhv/fondoresponsive-16.png') no-repeat center center fixed;
+    background-size: cover;
+  }
+  .skills1 .item {
+    width: calc(50% - 10px);
+    padding: 5px;
+    font-size: 10px;
+  }
+  .skills1 .title {
+    font-size: 14px;
+  }
+  .imgskills {
+    width: 25px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .skills1 .container {
+    max-width: 1400px;
+    gap: 10px;
+  }
+  .skills1 .item {
+    padding: 15px;
+    font-size: 16px;
+  }
+  .imgskills {
+    width: 45px;
+  }
+}
+
+
+/* SERVICIOS  */
+
+.card {
+  --lime-500: #bdd910;
+  --violet-700: #8a07b8;
+
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.75rem;
+
+  padding: 1rem;
+  width: 14rem;
+  height: auto;
+  min-height: 16rem;
+  background-color: var(--lime-500);
+
+  border-radius: 0.5rem;
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  top: 7rem;
+  right: 2rem;
+
+  width: 1.25rem;
+  aspect-ratio: 1 / 1;
+  background-color: var(--violet-700);
+
+  border-radius: 9999px;
+}
+
+.card::after {
+  content: "";
+  position: absolute;
+  top: 8.75rem;
+  right: -0.5rem;
+
+  width: 3rem;
+  aspect-ratio: 1 / 1;
+  background-color: var(--violet-700);
+
+  border-radius: 9999px;
+}
+
+.card .carousel {
+  position: absolute;
+  left: 0;
+
+  animation: carousel 10s linear var(--carousel_direction, normal) infinite;
+}
+
+.card .carousel[data-direction="right"] {
+  --carousel_direction: reverse;
+}
+.card .carousel[data-position="top"] {
+  top: 0.75rem;
+}
+.card .carousel[data-position="bottom"] {
+  bottom: 0.75rem;
+}
+
+.card .carousel .carousel__text {
+  font-size: 0.75rem;
+  color: black;
+  text-wrap: nowrap;
+}
+
+@keyframes carousel {
+  to {
+    transform: translate(-50%);
+  }
+}
+
+.card .image {
+  position: relative;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 0.25rem;
+  margin-bottom: 0.5rem;
+  width: fit-content;
+  aspect-ratio: 1 / 1;
+  background-color: black;
+
+  border-radius: 0.25rem;
+}
+
+.card .image svg {
+  width: 1.5rem;
+  fill: white;
+}
+
+.card .title {
+  position: relative;
+  z-index: 10;
+
+  font-size: 1rem;
+  color: black;
+  font-weight: bold;
+}
+
+.card .paragraph {
+  position: relative;
+  z-index: 10;
+
+  padding-right: 0.25rem;
+
+  font-size: 0.75rem;
+  color: black;
+}
